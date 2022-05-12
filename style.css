@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 33vw;
+  overflow-x: hidden;
+  margin: 10vh auto;
+}
+figcaption {
+  padding-top: 2rem;
+}
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.slider {
+  width: 400%;
+  overflow-x: hidden;
+  display: flex;
+  transition: 0.5s ease-in;
+}
+.slides img {
+  margin: 0;
+  width: 33vw;
+}
+.switchers {
+  transform: translate(50%,-70%);
+  background: white;
+}
+
+.wrapper input {
+  visibility: hidden;
+  width: 0%;
+  height: 0%;
+}
+.legend p {
+  visibility: hidden;
+}
+#dot1:checked ~ .slider {
+  transform: translateX(0%);
+
+}
+
+#dot2:checked ~ .slider {
+  transform: translateX(-25%);
+}
+
+#dot3:checked ~ .slider {
+  transform: translateX(-50%);
+}
+
+#dot4:checked ~ .slider {
+  transform: translateX(-75%);
+}
+
+.switchers label {
+  display: inline-block;
+  cursor: pointer;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.switchers label div {
+  width: 1rem;
+  height: 1rem;
+  margin: 0.2rem;
+  border: 0.3rem  solid beige;
+  background-color: aqua;
+  border-radius: 50%;
+  opacity: 1.0;
+  cursor: pointer;
+}
+.switchers {
+  margin: 0 auto;
+}

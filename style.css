@@ -9,6 +9,9 @@
 }
 figcaption {
   padding-top: 2rem;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 2rem;
 }
 figure {
   display: flex;
@@ -22,13 +25,21 @@ figure {
   display: flex;
   transition: 0.5s ease-in;
 }
+.wrapper {
+  border: 1em solid gainsboro;
+  border-radius: 10%;
+}
 .slides img {
   margin: 0;
   width: 33vw;
 }
 .switchers {
-  transform: translate(50%,-70%);
+  transform: translateY(-70%);
+  margin-left: 60%;
+  width: 40%;
   background: white;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .wrapper input {
@@ -61,17 +72,33 @@ figure {
   cursor: pointer;
   width: 2.2rem;
   height: 2.2rem;
+  background-color: white;
 }
 .switchers label div {
   width: 1rem;
   height: 1rem;
   margin: 0.2rem;
   border: 0.3rem  solid beige;
-  background-color: aqua;
+  background-color: rgb(137, 175, 91);
   border-radius: 50%;
   opacity: 1.0;
   cursor: pointer;
+  transition: 0.2s ease-out;
 }
-.switchers {
-  margin: 0 auto;
+.switchers label:hover > div {
+  background-color: rgb(31, 255, 1);
+}
+.switchers label div:hover {
+  background-color: rgb(31, 255, 1);
+}
+.switchers label:active > div {
+  border: 0.3rem  solid rgb(255, 0, 0);
+  background-color: rgb(175, 91, 126);
+}
+.switchers label div:active {
+  border: 0.3rem  solid rgb(255, 0, 0);
+  background-color: rgb(175, 91, 126);
+}
+@media screen and (max-width: 800px){ 
+  
 }

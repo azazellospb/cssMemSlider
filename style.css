@@ -100,5 +100,15 @@ figure {
   background-color: rgb(175, 91, 126);
 }
 @media screen and (max-width: 800px){ 
-  
+  .switchers {
+    transform: translateY(-150%);
+    width: 100%;
+    background: none;
+    justify-content: center;
+    margin-left: 0;
+  }
+  figcaption {
+    text-align: center;
+    padding-left: 0;
+  }
 }

@@ -3,7 +3,7 @@
   padding: 0;
 }
 .wrapper {
-  width: 33vw;
+  width: 60vw;
   overflow-x: hidden;
   margin: 10vh auto;
 }
@@ -24,6 +24,7 @@ figure {
   overflow-x: hidden;
   display: flex;
   transition: 0.5s ease-in;
+  pointer-events: none; /* при клике на любой слайд не будет сброшена фокусировка */
 }
 .wrapper {
   border: 1em solid gainsboro;
@@ -31,7 +32,7 @@ figure {
 }
 .slides img {
   margin: 0;
-  width: 33vw;
+  width: 60vw;
 }
 .switchers {
   transform: translateY(-70%);
@@ -73,6 +74,7 @@ figure {
   width: 2.2rem;
   height: 2.2rem;
   background-color: white;
+  outline: none;
 }
 .switchers label div {
   width: 1rem;
@@ -85,17 +87,12 @@ figure {
   cursor: pointer;
   transition: 0.2s ease-out;
 }
-.switchers label:hover > div {
+
+.switchers label:hover div {
   background-color: rgb(31, 255, 1);
 }
-.switchers label div:hover {
-  background-color: rgb(31, 255, 1);
-}
-.switchers label:active > div {
-  border: 0.3rem  solid rgb(255, 0, 0);
-  background-color: rgb(175, 91, 126);
-}
-.switchers label div:active {
+.switchers label:active div,
+.switchers label:focus div {
   border: 0.3rem  solid rgb(255, 0, 0);
   background-color: rgb(175, 91, 126);
 }
@@ -106,9 +103,9 @@ figure {
     background: none;
     justify-content: center;
     margin-left: 0;
-  }
+  } 
   figcaption {
-    text-align: center;
+    text-align: left;
     padding-left: 0;
   }
 }

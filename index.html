@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="aivanov.mcu@gmail.com">
+  <meta name="description" content="Slider on pure CSS">
+  <meta name="keywords" content="CSS, html, slider">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>csssMemSlider</title>
+</head>
+<body>
+  <div class="wrapper">
+      <input type="radio" name="switcher" id="dot1" checked>
+      <input type="radio" name="switcher" id="dot2">
+      <input type="radio" name="switcher" id="dot3">
+      <input type="radio" name="switcher" id="dot4">
+    <div class="slider" tabindex="-1">
+      <div class="slides s1">
+        <figure>
+          <img src = "slide1.jpg" alt="first mem slide">
+          <figcaption>First slide</figcaption>
+        </figure>
+      </div>  
+      <div class="slides s2">
+        <figure>
+          <img src = "slide2.jpg" alt="second mem slide">
+          <figcaption>Second slide</figcaption>
+        </figure>
+      </div> 
+      <div class="slides s3">
+        <figure>
+          <img src = "slide3.jpg" alt="third mem slide">
+          <figcaption>Third slide</figcaption>
+        </figure>
+      </div> 
+      <div class="slides s4">
+        <figure>
+          <img src = "slide4.jpg" alt="forth mem slide">
+          <figcaption>Forth slide</figcaption>
+        </figure>
+      </div> 
+    </div>
+    <div class="switchers">
+      <label for="dot1" class="bar" tabindex="1"><div></div></label>
+      <label for="dot2" class="bar" tabindex="1"><div></div></label>
+      <label for="dot3" class="bar" tabindex="1"><div></div></label>
+      <label for="dot4" class="bar" tabindex="1"><div></div></label>
+    </div>
+  </div>
+</body>
+</html>
